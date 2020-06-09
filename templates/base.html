@@ -1,0 +1,27 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+<h2>Текстовый редактор</h2>
+
+<div id="editor" contenteditable="true" style="height: 50%; width: 100%; border: solid; border-width: 1px; text-align: left"></div>
+
+{% block content %}
+
+{% endblock content %}
+
+<script src="../static/main.js"></script>
+</body>
+</html>
